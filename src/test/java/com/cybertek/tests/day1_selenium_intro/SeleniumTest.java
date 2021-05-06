@@ -18,7 +18,7 @@ public class SeleniumTest {
         // 3- test if driver id working
         driver.get("https://www.facebook.com");
         System.out.println(driver.getTitle());
-
+Dirver.close();
 
     }
 }
