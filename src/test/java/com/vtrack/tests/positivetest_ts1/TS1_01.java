@@ -80,11 +80,11 @@ public class TS1_01 {
   //  Step 5 - Truck driver should see first and last name on top right corner
     public void test5(){
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        WebElement userFirstNameAndLastName = driver.findElement(By.xpath("(//a[@class='dropdown-toggle'])[1]"));
-        String userName = userFirstNameAndLastName.getAttribute("class");
-        System.out.println(userName);
+        WebElement userFirstNameAndLastName = driver.findElement(By.xpath("(//*[@id=\"user-menu\"]/a"));
+        String userName = userFirstNameAndLastName.getText();
+        System.out.println(userName + "user name is here ");
 
-        Assert.assertTrue(!userName.isEmpty());
+        Assert.assertTrue(userName.contains("Toney"));
 
     }
 
