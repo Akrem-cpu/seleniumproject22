@@ -21,7 +21,7 @@ public class cyberTek {
         System.out.println("login.isDisplayed() = " + login.isDisplayed());
         // send key send letters
         UserName.sendKeys("Akremabud71@gmail.com");
-        passWord.sendKeys("0910177717Aa$");
+        passWord.sendKeys("");
 
 
 
